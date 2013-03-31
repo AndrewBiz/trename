@@ -1,3 +1,6 @@
-== vgen
+== trename
 
-Script generator for video coding using ffmpeg
+Renames input files (with names in YYYYmmdd-HHMMSS format) adding DELTA_TIME (in seconds) to YYYYmmdd-HHMMSS
+For example input file has name 20010312-100359_blablabla.mp4.
+command ls *.mp4 | trename -d 3600 renames the file adding 1 hour: 20010312-110359_blablabla.mp4
+
